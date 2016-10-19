@@ -24,6 +24,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func indexChanged(_ sender: AnyObject) {
+        
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            label.text = "First segment selected"
+        case 1:
+            label.text = "Second segment selected"
+        default:
+            break
+        }
     }
 
 }
